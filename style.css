@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+/* Styles for pop-up */
+/* ... existing styles ... */
+
+.hidden {
+  display: none;
+}
+
+/* Styles for pop-up */
+#fullName {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#fullName:hover {
+  color: #3182ce;
+}
+
+#semesterPopup {
+  z-index: 1000;
+}
+
+#semesterPopup > div {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#semesterList li {
+  margin-bottom: 0.5rem;
+}
+
+#closePopup {
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles for pop-up */
+.dark-mode #semesterPopup > div {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark-mode #semesterList a {
+  color: #63b3ed;
+}
+
+.dark-mode #semesterList a:hover {
+  color: #90cdf4;
+}
+
+.dark-mode #closePopup {
+  background-color: #4a5568;
+}
+
+.dark-mode #closePopup:hover {
+  background-color: #718096;
+}

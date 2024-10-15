@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cahya Apriyana</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -24,9 +25,14 @@
           alt="Cahya Apriyana"
           class="profile-pic w-44 h-44 rounded-full mx-auto mb-5 border-4 border-blue-900 shadow-lg"
         />
-        <h1 class="text-4xl mb-2 text-shadow">Cahya Apriyana</h1>
+        <h1 id="fullName" class="text-4xl mb-2 text-shadow cursor-pointer">
+          Cahya Apriyana
+        </h1>
         <h2 class="text-2xl mb-2 text-yellow-500">Universitas Subang</h2>
       </div>
+
+      <!-- Tambahkan div untuk biodata lengkap -->
+
       <table class="info-table w-full border-separate border-spacing-y-2">
         <tr>
           <td class="font-bold text-blue-900 p-4 bg-yellow-100 rounded-lg">
@@ -81,13 +87,40 @@
           ><i class="fab fa-instagram" aria-hidden="true"></i
         ></a>
         <a
-          href="#"
+          href="https://github.com/cahyaapriyana"
           target="_blank"
-          aria-label="LinkedIn"
+          aria-label="Github"
           class="mx-4 text-3xl text-blue-900 transition-colors duration-300 ease-in-out transform hover:text-red-700 hover:scale-125"
-          ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ><i class="fab fa-github" aria-hidden="true"></i
         ></a>
       </div>
     </div>
+
+    <!-- Tambahkan div untuk pop-up biodata -->
+    <div
+      id="biodataPopup"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center"
+    ></div>
+
+    <!-- Di dalam body, setelah konten utama -->
+    <div
+      id="semesterPopup"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center"
+    >
+      <div
+        class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4 transform scale-0 transition-transform duration-300"
+      >
+        <h3 class="text-2xl font-bold mb-4 text-center">Daftar Semester</h3>
+        <ul id="semesterList" class="list-disc pl-5 mb-4"></ul>
+        <button
+          id="closePopup"
+          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
