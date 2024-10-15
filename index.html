@@ -4,129 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cahya Apriyana</title>
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        background: linear-gradient(to right, #3651c0, #3d51c0, #2dbbfd);
-        color: #333;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 30px;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        border-radius: 15px;
-      }
-
-      .header {
-        text-align: center;
-        margin-bottom: 30px;
-        background-color: #1a2a6c;
-        padding: 20px;
-        border-radius: 10px;
-        color: #fff;
-      }
-
-      h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      }
-
-      h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #fdbb2d;
-      }
-
-      .profile-pic {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 20px;
-        border: 5px solid #1a2a6c;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-      }
-
-      .info-table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 10px;
-      }
-
-      .info-table td {
-        padding: 15px;
-        text-align: left;
-        background-color: rgba(253, 187, 45, 0.1);
-        border-radius: 5px;
-      }
-
-      .info-table td:first-child {
-        font-weight: bold;
-        color: #1a2a6c;
-      }
-
-      .about {
-        margin-bottom: 30px;
-        background-color: rgba(178, 31, 31, 0.1);
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-      }
-
-      .social-icons a {
-        margin: 0 15px;
-        font-size: 30px;
-        color: #1a2a6c;
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
-
-      .social-icons a:hover {
-        color: #b21f1f;
-        transform: scale(1.2);
-      }
-    </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <img src="cahya.png" alt="Cahya Apriyana" class="profile-pic" />
-        <h1>Cahya Apriyana</h1>
-        <h2>Universitas Subang</h2>
+  <body
+    class="font-sans m-0 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-400 text-gray-800"
+  >
+    <div
+      class="container max-w-2xl mx-auto my-12 p-8 bg-white bg-opacity-90 shadow-lg rounded-lg"
+    >
+      <div
+        class="header text-center mb-8 bg-blue-900 p-5 rounded-lg text-white"
+      >
+        <img
+          src="cahya.png"
+          alt="Cahya Apriyana"
+          class="profile-pic w-44 h-44 rounded-full mx-auto mb-5 border-4 border-blue-900 shadow-lg"
+        />
+        <h1 class="text-4xl mb-2 text-shadow">Cahya Apriyana</h1>
+        <h2 class="text-2xl mb-2 text-yellow-500">Universitas Subang</h2>
       </div>
-      <table class="info-table">
+      <table class="info-table w-full border-separate border-spacing-y-2">
         <tr>
-          <td>Email:</td>
-          <td>admin@cahyaapriyana.com</td>
-        </tr>
-
-        <tr>
-          <td>NPM</td>
-          <td>D1A20400</td>
+          <td class="font-bold text-blue-900 p-4 bg-yellow-100 rounded-lg">
+            Email:
+          </td>
+          <td class="p-4 bg-yellow-100 rounded-lg">admin@cahyaapriyana.com</td>
         </tr>
         <tr>
-          <td>Address:</td>
-          <td>
+          <td class="font-bold text-blue-900 p-4 bg-yellow-100 rounded-lg">
+            NPM
+          </td>
+          <td class="p-4 bg-yellow-100 rounded-lg">D1A20400</td>
+        </tr>
+        <tr>
+          <td class="font-bold text-blue-900 p-4 bg-yellow-100 rounded-lg">
+            Address:
+          </td>
+          <td class="p-4 bg-yellow-100 rounded-lg">
             Jl. Raden Ajeng Kartini No.KM. 3, desa nyimplung, Pasirkareumbi,
             Kec. Subang, Kabupaten Subang, Jawa Barat 41285 Indonesia
           </td>
         </tr>
       </table>
-      <div class="about">
+      <div class="about mb-8 bg-red-100 p-5 rounded-lg">
         <p>
           Saya adalah seorang mahasiswa yang berfokus pada pengembangan web dan
           desain grafis. Saya memiliki pengalaman dalam mengembangkan website
@@ -134,23 +58,33 @@
           ean
         </p>
       </div>
-      <div class="social-icons">
+      <div class="social-icons flex justify-center mt-8">
         <a
           href="https://www.facebook.com/cahyaestri"
           target="_blank"
           aria-label="Facebook"
+          class="mx-4 text-3xl text-blue-900 transition-colors duration-300 ease-in-out transform hover:text-red-700 hover:scale-125"
           ><i class="fab fa-facebook" aria-hidden="true"></i
         ></a>
-        <a href="https://x.com/cahyaestri" target="_blank" aria-label="Twitter"
+        <a
+          href="https://x.com/cahyaestri"
+          target="_blank"
+          aria-label="Twitter"
+          class="mx-4 text-3xl text-blue-900 transition-colors duration-300 ease-in-out transform hover:text-red-700 hover:scale-125"
           ><i class="fab fa-twitter" aria-hidden="true"></i
         ></a>
         <a
           href="https://www.instagram.com/cahya.yaml/"
           target="_blank"
           aria-label="Instagram"
+          class="mx-4 text-3xl text-blue-900 transition-colors duration-300 ease-in-out transform hover:text-red-700 hover:scale-125"
           ><i class="fab fa-instagram" aria-hidden="true"></i
         ></a>
-        <a href="#" target="_blank" aria-label="LinkedIn"
+        <a
+          href="#"
+          target="_blank"
+          aria-label="LinkedIn"
+          class="mx-4 text-3xl text-blue-900 transition-colors duration-300 ease-in-out transform hover:text-red-700 hover:scale-125"
           ><i class="fab fa-linkedin" aria-hidden="true"></i
         ></a>
       </div>
