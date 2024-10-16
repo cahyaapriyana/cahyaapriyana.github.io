@@ -1,2 +1,4 @@
-Personal webpage
-https://cahyaapriyana.github.io
+# Personal webpage
+[Cahya Apriyana](https://cahyaapriyana.github.io/)
+
+==Github account for learning and practice==
